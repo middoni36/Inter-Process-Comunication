@@ -123,9 +123,9 @@ int main(int argc, char *argv[])
        
         
         while(on){
-            FD_ZERO(&file_desc_set);
-            FD_SET(client_socket_fd,&file_desc_set);
-             FD_SET(client_socket_fd2,&file_desc_set);
+            FD_ZERO(&file_desc_set); //set the vector of filedescriptors to 0 bits ..
+            FD_SET(client_socket_fd,&file_desc_set);// insert the file descriptor of client 1 inside set of file descriptors
+             FD_SET(client_socket_fd2,&file_desc_set);// insert the file descriptor of client 2 inside set of file descriptors
              memset(buffer,0,Buffer_size); //initialise buffer to 0 byte 
 
 
