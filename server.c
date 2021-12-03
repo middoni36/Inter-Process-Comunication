@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <sys/select.h>
 
-#define Socket_place "/home/elmehdi/sockets/serversock"
+#define Socket_place "/home/elmehdi/sockets/serversock" // where our socket will be located
 #define Buffer_size 128
 
 //server test select
